@@ -1,0 +1,81 @@
+html,body{
+    width: 100%;
+    margin:0;
+    padding:0;
+}
+.main-nav{
+    width: 100%;
+    display: block;
+}
+.nav-container{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    margin: 0px auto;
+}
+.btns-container{
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+}
+.btnsIcons-container{
+    display: flex;
+    align-items: center;
+    margin-left: 4%;
+}
+.top-nav-bar{
+    background-color: #722bad;
+    padding: 2px 0px;
+}
+.top-sub-con{
+    width: 80%;
+    margin: 0px auto;
+    text-align: right;
+}
+.anchor-link{
+    text-decoration: none;
+}
+
+/* //desktop adjustments */
+@media screen and (max-width: 1100px) {
+    .nav-container{
+        width: 96%;
+    }
+    .top-sub-con{
+        width: 96%;
+    }
+    .btns-container{
+        margin-left: 2%;
+    }
+    .btnsIcons-container{
+        margin-left: 1%;
+    }
+}
+
+/* //for mobile devices */
+@media screen and (max-width: 800px) {
+    .top-sub-con{
+        text-align: center;
+    }
+    .nav-container{
+        display: block;
+    }
+    .App-logo{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .btns-container{
+        display: flex;
+        margin-left: 0px;
+        flex-wrap: wrap;
+        justify-content: center;
+        border-top: 1px solid #722bad;
+    }
+    .btnsIcons-container{
+        display: flex;
+        margin-left: 0px;
+        justify-content: center;
+        border-top: 1px solid #722bad;
+    }
+}
